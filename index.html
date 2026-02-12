@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My 3-Page Site</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">MySite</a>
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about/">About</a>
+        <a class="nav-link" href="contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome 👋</h1>
+      <p class="lead">
+        This is a simple 3-page website. The <strong>About</strong> and <strong>Contact</strong> pages live in subdirectories.
+      </p>
+      <div class="actions">
+        <a class="btn" href="about/">Go to About</a>
+        <a class="btn btn-outline" href="contact/">Go to Contact</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Fast</h2>
+        <p>Pure HTML/CSS/JS. No build step required.</p>
+      </article>
+      <article class="card">
+        <h2>Subdirectories</h2>
+        <p>Uses clean URLs like <code>/about/</code> and <code>/contact/</code>.</p>
+      </article>
+      <article class="card">
+        <h2>Reusable Layout</h2>
+        <p>Shared styling and a small JS helper for the footer year.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> MySite</span>
+      <span class="muted">Served locally via Apache</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

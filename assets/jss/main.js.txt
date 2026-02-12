@@ -1,0 +1,19 @@
+/* main.js */
+(function () {
+  // Footer year
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  // Contact form (front-end only)
+  var form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var status = document.getElementById("formStatus");
+      if (status) {
+        status.textContent = "Message sent (demo). Hook this to a backend when you're ready.";
+      }
+      form.reset();
+    });
+  }
+})();
